@@ -29,6 +29,7 @@ class ProductView: UIView {
 
     private override init(frame: CGRect) {
         super.init(frame: frame)
+        initializate()
         
     }
     
@@ -36,11 +37,15 @@ class ProductView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    convenience init(product name: String, description: String) {
+    convenience init(product name: String, description: String,
+                     imageName: String? = nil) {
         self.init(frame: .zero)
         
         productNameLabel.text = name
         productDescriptionLabel.text = description
+        guard let imageName = imageName else { return }
+        productImageContainer.image = UIImage(named: imageName)
+
     }
     
     override func layoutSubviews() {
@@ -74,7 +79,7 @@ class ProductView: UIView {
     
     private func setupNameLabel() {
         let size = CGSize(width: bounds.width / 2,
-                          height: bounds.height / 2)
+                          height: bounds.height / 2.5)
         let origin
         = CGPoint(x: productImageContainer.frame.maxX + 5,
                   y: bounds.minY + 5)
@@ -93,11 +98,11 @@ class ProductView: UIView {
     }
     
     private func setupAboutTheProductButton() {
-        let size = CGSize(width: bounds.height / 2,
-                          height: bounds.height / 2)
+        let size = CGSize(width: bounds.height / 3,
+                          height: bounds.height / 3)
         let origin
-        = CGPoint(x: productDescriptionLabel.frame.maxX + 5,
-                  y: bounds.minY + size.height / 2)
+        = CGPoint(x: bounds.maxX - size.width - 5,
+                  y: bounds.minY + size.height * 0.8)
         setupFrameFor(subview: aboutTheProductBtn,
                       origin: origin, size: size)
     }
