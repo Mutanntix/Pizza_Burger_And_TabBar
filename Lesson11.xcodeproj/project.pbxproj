@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD3B147D2869814A0023FA3A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3B147C2869814A0023FA3A /* Product.swift */; };
+		FD3B147F286981520023FA3A /* Burger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3B147E286981520023FA3A /* Burger.swift */; };
+		FD3B14812869815B0023FA3A /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3B14802869815B0023FA3A /* Pizza.swift */; };
+		FD3B1484286982070023FA3A /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3B1483286982070023FA3A /* Support.swift */; };
+		FD56990528697C07002C51A2 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56990328697C07002C51A2 /* MainButton.swift */; };
+		FD56990628697C07002C51A2 /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56990428697C07002C51A2 /* HeaderLabel.swift */; };
+		FD56990828697C21002C51A2 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56990728697C21002C51A2 /* ProductView.swift */; };
 		FDB65CEF286897F700777753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB65CEE286897F700777753 /* AppDelegate.swift */; };
 		FDB65CF1286897F700777753 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB65CF0286897F700777753 /* SceneDelegate.swift */; };
 		FDB65CF3286897F700777753 /* PizzaMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB65CF2286897F700777753 /* PizzaMainViewController.swift */; };
@@ -14,9 +21,17 @@
 		FDB65CFB286897F700777753 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB65CF9286897F700777753 /* LaunchScreen.storyboard */; };
 		FDB65D032868981600777753 /* BurgerMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB65D022868981600777753 /* BurgerMainViewController.swift */; };
 		FDB65D0928689B6F00777753 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB65D0828689B6F00777753 /* MainTabBarController.swift */; };
+		FDF90F442868C94200CE8D76 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FDF90F432868C94200CE8D76 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD3B147C2869814A0023FA3A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FD3B147E286981520023FA3A /* Burger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burger.swift; sourceTree = "<group>"; };
+		FD3B14802869815B0023FA3A /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		FD3B1483286982070023FA3A /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		FD56990328697C07002C51A2 /* MainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		FD56990428697C07002C51A2 /* HeaderLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
+		FD56990728697C21002C51A2 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		FDB65CEB286897F700777753 /* Lesson11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB65CEE286897F700777753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB65CF0286897F700777753 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,12 +48,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDF90F442868C94200CE8D76 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD3B147B2869813D0023FA3A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD3B147C2869814A0023FA3A /* Product.swift */,
+				FD3B147E286981520023FA3A /* Burger.swift */,
+				FD3B14802869815B0023FA3A /* Pizza.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD3B1482286981EF0023FA3A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FD3B1483286982070023FA3A /* Support.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FD56990228697BEC002C51A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD56990428697C07002C51A2 /* HeaderLabel.swift */,
+				FD56990328697C07002C51A2 /* MainButton.swift */,
+				FD56990728697C21002C51A2 /* ProductView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FDB65CE2286897F700777753 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +102,14 @@
 		FDB65CED286897F700777753 /* Lesson11 */ = {
 			isa = PBXGroup;
 			children = (
+				FD3B147B2869813D0023FA3A /* Models */,
+				FD56990228697BEC002C51A2 /* Views */,
 				FDB65D0428689B0E00777753 /* ViewControllers */,
 				FDB65D0528689B1900777753 /* AppDelegates */,
 				FDB65CF9286897F700777753 /* LaunchScreen.storyboard */,
-				FDB65CF7286897F700777753 /* Assets.xcassets */,
+				FD3B1482286981EF0023FA3A /* SupportingFiles */,
 				FDB65CFC286897F700777753 /* Info.plist */,
+				FDB65CF7286897F700777753 /* Assets.xcassets */,
 				FDB65D0828689B6F00777753 /* MainTabBarController.swift */,
 			);
 			path = Lesson11;
@@ -102,6 +149,9 @@
 			dependencies = (
 			);
 			name = Lesson11;
+			packageProductDependencies = (
+				FDF90F432868C94200CE8D76 /* SnapKit */,
+			);
 			productName = Lesson11;
 			productReference = FDB65CEB286897F700777753 /* Lesson11.app */;
 			productType = "com.apple.product-type.application";
@@ -130,6 +180,9 @@
 				Base,
 			);
 			mainGroup = FDB65CE2286897F700777753;
+			packageReferences = (
+				FDF90F422868C94200CE8D76 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = FDB65CEC286897F700777753 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -156,8 +209,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD56990828697C21002C51A2 /* ProductView.swift in Sources */,
+				FD56990628697C07002C51A2 /* HeaderLabel.swift in Sources */,
+				FD3B147D2869814A0023FA3A /* Product.swift in Sources */,
 				FDB65D032868981600777753 /* BurgerMainViewController.swift in Sources */,
+				FD3B14812869815B0023FA3A /* Pizza.swift in Sources */,
+				FD3B1484286982070023FA3A /* Support.swift in Sources */,
 				FDB65CF3286897F700777753 /* PizzaMainViewController.swift in Sources */,
+				FD56990528697C07002C51A2 /* MainButton.swift in Sources */,
+				FD3B147F286981520023FA3A /* Burger.swift in Sources */,
 				FDB65CEF286897F700777753 /* AppDelegate.swift in Sources */,
 				FDB65D0928689B6F00777753 /* MainTabBarController.swift in Sources */,
 				FDB65CF1286897F700777753 /* SceneDelegate.swift in Sources */,
@@ -316,7 +376,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -344,7 +404,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -370,6 +430,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDF90F422868C94200CE8D76 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDF90F432868C94200CE8D76 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDF90F422868C94200CE8D76 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FDB65CE3286897F700777753 /* Project object */;
 }

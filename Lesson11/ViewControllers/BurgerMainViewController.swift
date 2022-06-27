@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import SnapKit
 
 class BurgerMainViewController: UIViewController {
+    let burgers = supportBurgers
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,5 +17,6 @@ class BurgerMainViewController: UIViewController {
     }
     
 
-
 }
+
+
